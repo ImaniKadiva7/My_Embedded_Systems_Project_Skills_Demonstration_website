@@ -1,0 +1,2 @@
+1. Get the design of the webpage first
+	* Background of the body.

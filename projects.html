@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Embedded systems and Software Projects Website</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Karla:wght@400;700&family=Merienda:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    </head>
+    <body class="projects-page">
+        <div id="projects-content" class="main-containers">
+            <div id="first-project">
+                <div class="project-img-section">
+                    <img src="./images/push_button_read_project_image.png" alt="push button project">
+                </div>
+                <div class="project-description-section">
+                    <h1>Reading Push Button Project</h1>
+                    <p>As seen on the project title above</p>
+                    <p>This project reads the state of the pushbutton</p>
+                    <p>When pressed, the button state changes from</p>
+                    <p>High to Low and the LED turns off and vice versa is true</p>
+                    <button onclick="togglePopup()">View Code and video</button>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                <p>int led = 13; // LED connected to pin 13</p>
+                <p>int buttonPin = 7; // button pin connected to pin 7</p>
+                <p>int storageValue = 0; // variable to store the read value</p>
+                <br>
+                <p>void setup() {</p>
+                <p>     Serial.begin(9600); // initialize the serial monitor</p>
+                <p>     pinMode(led, OUTPUT); // set the LED as output</p>
+                <p>     pinMode(buttonPin, INPUT); // set the button as input</p>
+                <p>}</p>
+                <p>void loop() { <br>
+                    // put your main code here, to run repeatedly: <br>
+                    storageValue = digitalRead(buttonPin); // set value to the button input <br>
+                    digitalWrite(led, storageValue); // set LED to the pushbutton value <br>
+                  }
+                </p>
+                <a href="https://www.youtube.com/watch?v=wlN2LI9mGyk">Click here to watch the video of this project</a>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+
+    </body>
+</html>

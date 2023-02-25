@@ -1,0 +1,226 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.home-page
+{
+    background-color: lightblue;
+}
+
+.projects-page
+{
+    background-color: #42ad9b;
+}
+
+.main-containers
+{
+    padding: 2% 3%;
+    margin-top: 50px;
+}
+
+.title-class h1
+{
+    font-size: 1.8rem;
+    opacity: 0.8;
+}
+
+.title-class h3
+{
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
+
+.title-class p, .button-class p
+{
+    font-size: 1rem;
+}
+
+.arduino-image img, .project-img-section img
+{
+    width: 250px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.arduino-image, .button-class
+{
+    padding-top: 10px;
+}
+
+.title-class h1, .title-class h3, .title-class p,
+.arduino-image, .button-class
+{
+    text-align: center;
+}
+
+.button-class a
+{
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    opacity: 0.8;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.button-class a:hover
+{
+    cursor: pointer;
+    background-color: green;
+    transition: 0.8s;
+}
+
+.copyright-class
+{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-class p, .title-class h3
+{
+    padding-bottom: 10px;
+}
+
+#first-project
+{
+    flex-direction: column;
+    text-align: center;
+}
+
+.project-img-section, .project-description-section
+{
+    flex-basis: 100%;
+}
+
+.project-description-section
+{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+.project-description-section h1, .project-description-section p
+{
+    color: black;
+    opacity: 0.8;
+}
+
+.project-description-section button
+{
+    padding: 15px;
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.project-description-section button:hover
+{
+    color: yellow;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.popup .overlay
+{
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+    position:fixed;
+}
+
+.popup .content
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 400px;
+    z-index: 2;
+    /*text-align: center;*/
+    padding: 20px; 
+    position: absolute;
+}
+
+.popup .close-btn
+{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popup.active .overlay
+{
+    display: block;
+}
+
+.popup.active .content
+{
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%, -50%) scale(1);
+}
+
+@media (min-width: 576px)
+{
+    .main-containers
+    {
+        margin: 50px auto;
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+    .title-class h1
+    {
+        font-size: 2.8rem;
+    }
+    .arduino-image, .button-class 
+    {
+        text-align: center;
+    }
+    .title-class h3
+    {
+        font-size: 2.3rem; 
+    }
+    .title-class p
+    {
+        font-size: 1.5rem;
+    }
+    #first-project
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .project-img-section, .project-description-section
+    {
+        flex-basis: 50%;
+    }
+}
