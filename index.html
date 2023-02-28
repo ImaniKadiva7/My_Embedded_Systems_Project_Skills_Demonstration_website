@@ -10,22 +10,18 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Karla:wght@400;700&family=Merienda:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/2fa5855f57.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     </head>
     <body class="home-page">
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <label class="logo">
-                Imani Kadiva
-            </label>
+        <nav class="navbar">
+            <h1>IMANI KADIVA</h1>
+            <button class="toggleNav">☰ Menu</button>
             <ul>
                 <li>
-                    <a class="active" href="./index.html">Home</a>
+                    <a class="active" href="./index.html">HOME</a>
                 </li>
                 <li>
-                    <a href="./projects.html">Projects</a>
+                    <a href="./projects.html">PROJECTS</a>
                 </li>
             </ul>
         </nav>
@@ -56,5 +52,17 @@
         </div>
 
         <script src="./script.js"></script>
+
+        <script>
+
+            $(function() {
+                $('.toggleNav').on('click', function() {
+                    //$('.navbar ul').toggleClass('open');
+                    //$('.flex-nav ul').slideToggle();
+                });
+            });
+
+    </script>
+
     </body>
 </html>
