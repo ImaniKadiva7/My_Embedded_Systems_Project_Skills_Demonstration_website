@@ -12,57 +12,54 @@
         <script src="https://kit.fontawesome.com/2fa5855f57.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     </head>
-    <body class="home-page">
-        <nav class="navbar">
-            <h1>IMANI KADIVA</h1>
-            <button class="toggleNav">☰ Menu</button>
-            <ul>
-                <li>
-                    <a class="active" href="./index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="./projects.html">PROJECTS</a>
-                </li>
-            </ul>
-        </nav>
-        <div id="website-title-container" class="main-containers">
-            <div class="title-class">
-                <h1>WELCOME TO MY EMBEDDED SYSTEMS PROJECTS WEBSITE</h1>
-                <h3>This website is designed and developed by Imani Kadiva</h3>
-                <P>The purpose of this website is to demonstrate my embedded system design skills</P>
-                <p>and embedded software development skills</p>
-            </div>
-            <div class="arduino-image">
-                <img 
-                 src="./images/Arduin_image.jpg" 
-                 alt="
-                      The Arduino Image here represents Arduino that has the microcontroller mostly 
-                      used in my projects
-                    "
-                >
-            </div>
-            <div class="button-class">
-                <p>Click the button below to view the projects</p>
-                <a href="./projects.html">Embedded systems Projects</a>
-                <br>
-            </div>
-            <div class="copyright-class">
-                <p>&copy Imani Kadiva</p>
-            </div>
-        </div>
-
-        <script src="./script.js"></script>
-
-        <script>
-
-            $(function() {
-                $('.toggleNav').on('click', function() {
-                    //$('.navbar ul').toggleClass('open');
-                    //$('.flex-nav ul').slideToggle();
-                });
-            });
-
-    </script>
-
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="left-header">
+                    <h1>IMANI KADIVA</h1>
+                </div>
+                <div class="right-header">
+                    <button class="toggleNav">☰ Menu</button>
+                    <ul>
+                        <li>
+                            <a class="home-page active" href="./index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a class="projects-page" href="./projects.html">PROJECTS</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="home-main">
+            <section class="home-section1">
+                <h1>Welcome to my Embedded Systems Projects Website</h1>
+                <h2>This website is designed and developed by Imani Kadiva</h2>
+                <p>
+                    The purpose of this site is to demonstrate my embedded 
+                    system design skills and embedded software development 
+                    skills.
+                </p>
+            </section>
+            <section class="home-section2">
+                <figure>
+                    <img 
+                        src="./images/Arduin_image.jpg" 
+                        alt="Arduino used in my projects"
+                    >
+                </figure>
+            </section>
+            <section class="home-section3">
+                <p>
+                    Click the link below to view my projects <br> <br>
+                    <a href="./projects.html">Projects</a>
+                </p>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Imani Kadiva &copy;
+            </p>
+        </footer>
     </body>
 </html>

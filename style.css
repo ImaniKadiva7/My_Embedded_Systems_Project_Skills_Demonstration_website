@@ -1,8 +1,14 @@
-*
+html
 {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+*, *:before, *:after
+{
+    padding: inherit;
+    margin: inherit;
+    box-sizing: inherit;
     text-decoration: none;
     list-style: none;
 }
@@ -12,300 +18,169 @@ body
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-.home-page
+header
 {
-    background-color: lightblue;
+    padding: 2% 5%;
+    background: #1f2937;
+    margin-bottom: 80px;
 }
 
-.projects-page
+header .navbar
 {
-    background-color: #42ad9b;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background: #1f2937;
+    margin: 0;
 }
 
-.main-containers
+.navbar .left-header h1
 {
-    padding: 2% 3%;
-    margin-top: 50px;
+    color: #F9FAF8;
+    font-size: 24px;
 }
 
-.title-class h1
+.navbar .right-header ul
 {
-    font-size: 1.8rem;
-    opacity: 0.8;
+    display: none;
 }
 
-.title-class h3
+.navbar .right-header button
 {
-    font-size: 1.2rem;
-    padding-top: 10px;
+    float: right;
+    border: none;
+    background: none;
+    color: #E5E7EB;
+    font-size: 18px;
 }
 
-.title-class p, .button-class p
+.home-main
 {
-    font-size: 1rem;
+    padding: 1% 15%;
 }
 
-.arduino-image img, .project-img-section img
+.home-section1
 {
-    width: 250px;
-    height: 150px;
-    border: 1px solid black;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.home-section1 h1
+{
+    font-size: 36px;
+}
+
+.home-section1 h2
+{
+    font-size: 24px;
+}
+.home-section1 p
+{
+    font-size: 18px;
+}
+.home-section2
+{
+    padding: 0;
+    text-align: center;
+}
+.home-main .home-section2 figure img
+{
+    width: 300px;
+    height: auto;
+    border: 2px solid black;
     border-radius: 5px;
 }
 
-.arduino-image, .button-class
+.home-section3
 {
-    padding-top: 10px;
-}
-
-.title-class h1, .title-class h3, .title-class p,
-.arduino-image, .button-class
-{
-    text-align: center;
-}
-
-.button-class a
-{
-    color: white;
-    text-decoration: none;
-    background-color: black;
-    padding: 10px;
-    opacity: 0.8;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-.button-class a:hover
-{
-    cursor: pointer;
-    background-color: green;
-    transition: 0.8s;
-}
-
-.copyright-class
-{
+    padding: 0;
     text-align: center;
     margin-top: 20px;
 }
 
-.button-class p, .title-class h3
+.home-section3 p, .home-section3 p a
 {
-    padding-bottom: 10px;
+    font-size: 18px;
 }
 
-#first-project
+.home-section3 p
 {
-    flex-direction: column;
-    text-align: center;
+    margin-bottom: 20px;
 }
 
-.project-img-section, .project-description-section
+.home-section3 p a
 {
-    flex-basis: 100%;
-}
-
-.project-description-section
-{
-    border: 2px solid black;
+    background: black;
+    padding: 1% 15%;
     border-radius: 5px;
-    background-color: lightblue;
+    color: #E5E7EB;
+    margin-top: 20px;
 }
 
-.project-description-section h1, .project-description-section p
+footer
 {
-    color: black;
-    opacity: 0.8;
-}
-
-.project-description-section button
-{
-    padding: 15px;
-    background-color: green;
-    color: white;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 1rem;
-}
-
-.project-description-section button:hover
-{
-    color: yellow;
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.popup .overlay
-{
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-    display: none;
-    position:fixed;
-}
-
-.popup .content
-{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    background: #fff;
-    width: 450px;
-    height: 400px;
-    z-index: 2;
-    /*text-align: center;*/
-    padding: 20px; 
-    position: absolute;
-}
-
-.popup .close-btn
-{
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 30px;
-    height: 30px;
-    background: #222;
-    color: #fff;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 30px;
+    margin-top: 40px;
+    padding: 1% 15%;
     text-align: center;
-    border-radius: 50%;
-    cursor: pointer;
+    background: #1f2937;
+}
+footer p
+{
+    margin: 0;
+    padding: 0;
+    color: #E5E7EB;
+    font-size: 18px;
 }
 
-.popup.active .overlay
+@media(min-width: 576px)
 {
-    display: block;
-}
-
-.popup.active .content
-{
-    transition:all 300ms ease-in-out;
-    transform:translate(-50%, -50%) scale(1);
-}
-
-.navbar 
-{
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.navbar ul 
-{
-    display: none;
-}
-
-.navbar h1 
-{
-    float: left;
-    font-size: 21px;
-    display: block;
-    color: #f2f2f2;
-    padding: 14px 16px;
-    margin-left: 50px;
-}
-
-.navbar button
-{
-    float: right;
-    font-size: 17px;
-    padding: 14px 16px;
-    background: #333;
-    border: none;
-    color: white;
-    display: inline-block;
-}
-      
-.navbar button:hover
-{
-    cursor: pointer;
-}
-
-.navbar ul.open
-{
-    display: flex;
-    flex-direction: column;
-}
-
-@media (min-width: 576px)
-{
-    .main-containers
+    header
     {
-        margin: 50px auto;
-        max-width: 900px;
-        display: flex;
-        flex-direction: column;
-        flex-basis: 100%;
+        padding: 1% 10%;
     }
-    .title-class h1
-    {
-        font-size: 2.8rem;
-    }
-    .arduino-image, .button-class 
-    {
-        text-align: center;
-    }
-    .title-class h3
-    {
-        font-size: 2.3rem; 
-    }
-    .title-class p
-    {
-        font-size: 1.5rem;
-    }
-    #first-project
-    {
-        display: flex;
-        flex-direction: row;
-    }
-    .project-img-section, .project-description-section
-    {
-        flex-basis: 50%;
-    }
-
-    a.active,a:hover
-    {
-        transition: 0.5s;
-        color: white;
-        border-bottom: 1px solid #fff;
-    }
-
-    .navbar button
+    .navbar .right-header button
     {
         display: none;
     }
-
-    .navbar ul 
+    .navbar .right-header
     {
-        float: right;
         display: flex;
-        margin-right: 50px;
+        align-items: baseline;
     }
 
-    .navbar li
+    .navbar .right-header ul
     {
-        list-style: none;
-        padding: 14px 16px;
+        display: flex;
     }
 
-    .navbar li a
+    .right-header ul li a.home-page
     {
-        text-decoration: none;
-        color: #f2f2f2;
-        font-size: 20px;
+        margin-right: 20px;
     }
-    .navbar a:hover 
+
+    .navbar .right-header ul li a
     {
-        background: #ddd;
-        color: black;
+        color: #E5E7EB;
+        font-size: 18px;
+    }
+
+    .right-header a.active
+    {
+        border-bottom: 1px solid #E5E7EB;
+    }
+
+    .home-section3 a:hover
+    {
+        background: #1f2937;
+        color: #F9FAF8;
+        transition: 0.6s;
+        cursor: pointer;
+    }
+
+    .home-main .home-section2 figure img
+    {
+        width: 400px;
+        height: auto;
     }
 }
