@@ -22,7 +22,7 @@ header
 {
     padding: 2% 5%;
     background: #1f2937;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 header .navbar
@@ -120,7 +120,7 @@ header .navbar
 
 footer
 {
-    margin-top: 40px;
+    margin-top: 70px;
     padding: 1% 15%;
     text-align: center;
     background: #1f2937;
