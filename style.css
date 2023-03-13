@@ -217,24 +217,6 @@ footer p
     .concurrentProcessingAndBareMetalProjectContainer
     {
         padding: 0% 25%;
-        display: flex;
-        justify-content: center;
-    }
-    .concurrentProcessingAndBareMetalProjectContainer img
-    {
-        width: 100%;
-        height: auto;
-        padding: 0;
-        border-radius: 10px;
-    }
-    .concurrentProcessingAndBareMetalProjectContainer h1,
-    .concurrentProcessingAndBareMetalProjectContainer p
-    {
-        padding: 0;
-    }
-    .concurrentProcessingAndBareMetalProjectContainer p
-    {
-        font-size: 1.3rem;
     }
     .concurrentProcessingAndBareMetalProjectContainer div
     {
